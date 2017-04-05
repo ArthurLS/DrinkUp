@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="This awesome app has been made by"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/salla_mathieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="53dp"
+        android:text="Salla, Mathieu"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/arthur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and Arthur"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_below="@+id/salla_mathieu"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/arthur" />
+</RelativeLayout>
