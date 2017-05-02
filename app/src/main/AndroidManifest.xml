@@ -15,8 +15,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings" />
-        <activity android:name=".Credits" />
+        <activity
+            android:name=".App_Settings"
+            android:label="App Settings"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Credits"
+            android:label="Credits"
+            android:parentActivityName=".Home"/>
+
+        <activity
+            android:name=".Game_Settings"
+            android:label="Game Settings"
+            android:theme="@style/game_settings_theme" />
     </application>
 
 </manifest>
