@@ -28,6 +28,7 @@
             android:name=".Game_Settings"
             android:label="Game Settings"
             android:theme="@style/game_settings_theme" />
+        <activity android:name=".Game" />
     </application>
 
 </manifest>
