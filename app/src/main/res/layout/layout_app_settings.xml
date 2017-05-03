@@ -10,35 +10,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mobilesocial.drinkup.App_Settings">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/goto_modify_rule"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="32dp"
-        android:text="Here Will be Languages"
-        android:textAlignment="center"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="38dp"
-        android:text="Here Will be Difficulty?"
-        android:textAlignment="center"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Modify Card Rules"
+        android:layout_marginTop="62dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:text="Here Will be voice volume"
-        android:textSize="24sp" />
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goto_modify_rule"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_easy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:button="@drawable/radio_button"
+            android:checked="true"
+            android:editable="true"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_button"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_button"
+            android:text="Hard" />
+    </RadioGroup>
 </RelativeLayout>
