@@ -37,12 +37,4 @@
         android:layout_below="@+id/salla_mathieu"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
-        android:text="Back"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/arthur" />
 </RelativeLayout>

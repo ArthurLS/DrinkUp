@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobilesocial.drinkup.fragments.TwoFragment">
+
+    <Button
+        android:id="@+id/btn_easy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Easy"
+        android:layout_above="@+id/btn_medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+
+    <Button
+        android:id="@+id/btn_medium"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_hard"
+        android:layout_alignStart="@+id/btn_easy"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_green_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Medium" />
+
+    <Button
+        android:id="@+id/btn_hard"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_medium"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Hard" />
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_red_light"
+        android:text="Start the Game" />
+
+</RelativeLayout>

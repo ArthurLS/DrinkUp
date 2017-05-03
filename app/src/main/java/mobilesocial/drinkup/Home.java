@@ -14,11 +14,20 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_home);
 
+        Button btn_start = (Button) findViewById(R.id.btn_start);
+        btn_start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_start = new Intent(Home.this, Game_Settings.class);
+                startActivity(intent_start);
+            }
+        });
+
         Button btn_settings = (Button) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_setting = new Intent(Home.this, Settings.class);
+                Intent intent_setting = new Intent(Home.this, App_Settings.class);
                 startActivityForResult(intent_setting, 1);
             }
         });
