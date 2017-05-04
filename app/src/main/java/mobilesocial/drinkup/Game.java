@@ -1,5 +1,6 @@
 package mobilesocial.drinkup;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +25,9 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.layout_game);
 
         ImageView img = (ImageView) findViewById(R.id.cardView);
-        img.setImageResource(R.drawable.card2);
+        img.setImageResource(R.drawable.black_joker);
+        TextView text = (TextView) findViewById(R.id.ruleView);
+        text.setText("Start the game by clicking the screen.");
 
     }
     int count = 0;
@@ -71,8 +74,9 @@ public class Game extends AppCompatActivity {
         }
         if (event.getAction() == MotionEvent.ACTION_UP & count>=52) {
             //End of the game
-            TextView text = (TextView) findViewById(R.id.ruleView);
-            text.setText("Game over");
+            //TextView text = (TextView) findViewById(R.id.ruleView);
+            //text.setText("Game over");
+            startActivity(new Intent(Game.this, Game_End.class));
             return true;
         }
         else {
