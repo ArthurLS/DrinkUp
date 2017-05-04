@@ -40,7 +40,7 @@
         android:layout_alignStart="@+id/btn_custom_rules" />
 
     <Button
-        android:id="@+id/start_game"
+        android:id="@+id/start_game2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"

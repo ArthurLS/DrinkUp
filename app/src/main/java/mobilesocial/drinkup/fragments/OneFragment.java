@@ -2,6 +2,7 @@ package mobilesocial.drinkup.fragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import mobilesocial.drinkup.Game;
 import mobilesocial.drinkup.R;
 
 public class OneFragment extends Fragment {
@@ -42,6 +44,16 @@ public class OneFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_players, container, false);
+
+        Button start_game = (Button) rootView.findViewById(R.id.start_game1);
+
+        start_game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_start = new Intent(getActivity(), Game.class);
+                startActivity(intent_start);
+            }
+        });
 
         list = (ListView) rootView.findViewById(R.id.listFrag);
 

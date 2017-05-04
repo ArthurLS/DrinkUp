@@ -56,8 +56,7 @@ public class Game_Settings extends AppCompatActivity{
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new OneFragment(), "Players");
-        adapter.addFragment(new TwoFragment(), "Rules");
-        adapter.addFragment(new ThreeFragment(), "Difficulty");
+
         viewPager.setAdapter(adapter);
     }
 
