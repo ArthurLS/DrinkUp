@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Game">
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +28,10 @@
             android:name=".Game_Settings"
             android:label="Game Settings"
             android:theme="@style/game_settings_theme" />
-        <activity android:name=".Home" />
+        <activity
+            android:name=".Game"
+            android:label="Game"
+            android:parentActivityName=".Home"/>
         <activity android:name=".Game_End" />
     </application>
 
