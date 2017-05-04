@@ -5,4 +5,6 @@
 
     <string name="hello_world">Hello world!</string>
 
+    <string name="game_menu">Game Settings</string>
+
 </resources>
