@@ -22,7 +22,7 @@ public class Home extends AppCompatActivity {
                 startActivity(intent_start);
             }
         });
-
+        /*
         Button btn_settings = (Button) findViewById(R.id.btn_settings);
         btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class Home extends AppCompatActivity {
                 Intent intent_setting = new Intent(Home.this, App_Settings.class);
                 startActivityForResult(intent_setting, 1);
             }
-        });
+        });*/
 
         Button btn_credits = (Button) findViewById(R.id.btn_credits);
         btn_credits.setOnClickListener(new View.OnClickListener() {

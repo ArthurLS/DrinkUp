@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:textSize="28sp"
-        android:text="Thank you for drinking!\n\t\t\t\t\t\t\t\t\t\t\t By\n Salla, Arthur, Mathieu"
+        android:text="Thank you for drinking!\n\t\t\t\t\t\t\t\t\t\t\t\t\t By\n Salla, Arthur, Mathieu"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
