@@ -15,11 +15,18 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import java.util.Random;
 
+import mobilesocial.drinkup.fragments.OneFragment;
+
 /**
  * Created by Salla on 29.4.2017.
  */
 
 public class Game extends AppCompatActivity {
+    public static OneFragment names = new OneFragment();
+    public static void main(String[] args){
+        names.getList().get(0);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +35,8 @@ public class Game extends AppCompatActivity {
         ImageView img = (ImageView) findViewById(R.id.cardView);
         img.setImageResource(R.drawable.black_joker);
         TextView text = (TextView) findViewById(R.id.ruleView);
+        TextView name = (TextView) findViewById(R.id.nameView);
+        name.setText("");
         text.setText("Start the game by clicking the screen.");
 
     }
@@ -70,6 +79,9 @@ public class Game extends AppCompatActivity {
             img.setImageResource(cards[suffledNumbers.get(count)]);
             TextView text = (TextView) findViewById(R.id.ruleView);
             text.setText(rules.get(suffledNumbers.get(count)));
+            TextView name = (TextView) findViewById(R.id.nameView);
+            //names.getList().size();       size of the list
+            //names.getList().get(0);       first item on the list
             count++;
             return true;
         }

@@ -26,7 +26,7 @@ import mobilesocial.drinkup.Game;
 import mobilesocial.drinkup.R;
 
 public class OneFragment extends Fragment {
-    List<String> prenoms = new ArrayList<String>();
+    public static List<String> prenoms = new ArrayList<String>();
     ArrayAdapter<String> adapter;
     ListView list;
     EditText editTxt;
@@ -141,6 +141,9 @@ public class OneFragment extends Fragment {
         Log.d("TAGME", "Player Added");
     }
 
+    public List<String> getList() {
+        return this.prenoms;
+    }
 
 
 }
