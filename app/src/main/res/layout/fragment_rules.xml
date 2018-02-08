@@ -2,45 +2,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mobilesocial.drinkup.fragments.TwoFragment">
+    tools:context="com.example.mathieu.databasetest.fragments.TwoFragment">
 
     <Button
-        android:id="@+id/btn_preset_rules"
+        android:id="@+id/btn_viewRules"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@android:color/holo_green_light"
-        android:text="Preset Rules"
-        android:layout_above="@+id/btn_custom_rules"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp" />
+        android:text="View Rules"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/btn_custom_rules"
+        android:id="@+id/btn_createRule"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@android:color/holo_green_light"
-        android:text="Custom Rules"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@+id/btn_create_rule"
-        android:layout_alignStart="@+id/btn_preset_rules" />
+        android:text="Create Rule"
+        android:layout_below="@+id/btn_viewRules"
+        android:layout_alignStart="@+id/btn_viewRules"
+        android:layout_marginTop="18dp" />
 
     <Button
-        android:id="@+id/btn_create_rule"
+        android:id="@+id/btn_deleteRule"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@android:color/holo_green_light"
-        android:text="Create New Rule"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/btn_custom_rules" />
+        android:text="Delete Rule"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/btn_createRule"
+        android:layout_alignStart="@+id/btn_createRule" />
 
     <Button
-        android:id="@+id/start_game2"
+        android:id="@+id/btn_changeRule"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Change Rule"
+        android:layout_below="@+id/btn_deleteRule"
+        android:layout_alignStart="@+id/btn_deleteRule" />
+
+    <Button
+        android:id="@+id/btn_viewSet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_changeRule"
+        android:layout_below="@+id/btn_changeRule"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/holo_green_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="View Game Set" />
+
+    <Button
+        android:id="@+id/btn_start_game2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"

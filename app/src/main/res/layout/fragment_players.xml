@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="mobilesocial.drinkup.fragments.OneFragment"
+    tools:context="com.example.mathieu.databasetest.fragments.OneFragment"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:descendantFocusability="beforeDescendants"
@@ -23,7 +23,7 @@
         android:singleLine="true"/>
 
     <Button
-        android:id="@+id/start_game1"
+        android:id="@+id/btn_start_game1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText"
